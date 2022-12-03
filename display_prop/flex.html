@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .space{
+            white-space: pre-wrap;
+        }
+
+        .flexbox-item{
+            background-color: blue;
+            width: 200px;
+            margin: 10px;
+            border: 2px solid black 
+        }
+
+        .flexbox-item-1{
+            background-color: aqua;
+            width: 100px;
+            min-height: 10px;
+        }
+
+        .flexbox-item-2{
+            background-color: green;
+            min-height: 30px;
+        }
+
+        .flexbox-item-3{
+            background-color: red;
+            min-height: 60px;
+        }
+
+        .flexbox-container{
+            display: flex;
+            border: 2px solid black;
+
+            /* flex property  */
+            justify-content: flex-start; /*default value*/
+            justify-content: center; 
+            justify-content: space-between; /*same space between*/
+            justify-content: space-around; /*space around*/
+        }
+
+        .flexbox-container-2{
+            display: flex;
+            border: 2px solid black;
+
+
+            /*cross axis align*/
+            align-items: stretch; /*default: vertically strech all the way they can*/
+            align-items: flex-start; /*keep original size on cross axis */
+            align-items: center;
+        }
+
+        .flexbox-container-3{
+            display: flex;
+            border: 2px solid black;
+            height: 100px;
+            justify-content: center;
+            flex-wrap: wrap;  /*content will wrap around when display is smaller*/
+            align-content: flex-start; /*align at top of container*/
+            align-content: flex-end; /*bottom*/
+            align-content: space-between;
+        }
+
+        .flexbox-container-4{
+            display: flex;
+            height: 300px;
+            border: 2px solid black;
+
+            flex-direction: column;
+            justify-content: center; /*vertically center*/
+            align-items: center;  /*center align horizotally*/
+        }
+
+       
+    </style>
+
+    <body>
+        flex-box 1 : justify-content
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+            </div>
+            <div class="flexbox-item flexbox-item-3">
+            </div>
+        </div>
+
+        <div class="space">
+            .flexbox-container{
+                display: flex;
+    
+                /* flex property  */
+                justify-content: flex-start; /*default value*/
+                justify-content: center; 
+                justify-content: space-between; /*same space between*/
+                justify-content: space-around; /*space around*/
+            }
+        </div>
+
+        <br>
+        <br><br><br><br><hr>
+        flex-box 2 : align items
+        <div class="flexbox-container-2">
+            <div class="flexbox-item flexbox-item-1">
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+            </div>
+            <div class="flexbox-item flexbox-item-3">
+            </div>
+        </div>
+        <div class="space">
+            .flexbox-container-2{
+                display: flex;
+                border: 2px solid black;
+    
+    
+                /*cross axis align*/
+                align-items: stretch; /*default: vertically strech all the way they can*/
+                align-items: flex-start; /*keep original size on cross axis */
+                align-items: center;
+            }
+        </div>
+        <br>
+        <br><br><br><br><hr>
+        flex-box 3 : align-content
+        <div class="flexbox-container-3">
+            <div class="flexbox-item flexbox-item-1">
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+            </div>
+            <div class="flexbox-item flexbox-item-3">
+            </div>
+        </div>
+        <div class="space">
+            .flexbox-container-3{
+                display: flex;
+                border: 2px solid black;
+                height: 100px;
+                justify-content: center;
+                flex-wrap: wrap;  /*content will wrap around when display is smaller*/
+                align-content: flex-start; /*align at top of container*/
+                align-content: flex-end; /*bottom*/
+                align-content: space-between;
+            }
+        </div>
+        <br>
+        <br><br><br><br><hr>
+        flex-box 4 : VERTICAL flex-box
+        <div class="flexbox-container-4">
+            <div class="flexbox-item flexbox-item-1">
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+            </div>
+            <div class="flexbox-item flexbox-item-3">
+            </div>
+        </div>
+        <div class="space">
+            .flexbox-container-4{
+                display: flex;
+                height: 300px;
+                border: 2px solid black;
+    
+                flex-direction: column;
+                justify-content: center; /*vertically center*/
+                align-items: center;  /*center align horizotally*/
+            }
+        </div>
+        <br>
+        <br><br><br><br><hr>
+        flex-box 5 : VERTICAL streching
+        <div class="flexbox-container-3">
+            <div class="flexbox-item flexbox-item-1" style="height:10px; align-self:flex-end;">
+            </div>
+            <div class="flexbox-item flexbox-item-2" style="height:20px;">
+            </div>
+            <div class="flexbox-item flexbox-item-3" style="height:10px;">
+            </div>
+        </div>
+        <div class="space">
+            .flexbox-container-3{
+                display: flex;
+                border: 2px solid black;
+                height: 100px;
+                justify-content: center;
+                flex-wrap: wrap;  /*content will wrap around when display is smaller*/
+                align-content: flex-start; /*align at top of container*/
+                align-content: flex-end; /*bottom*/
+                align-content: space-between;
+            }
+        </div>
+        <br>
+        <br><br><br><br><hr>
+        flex-box 6 : take remianing space
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1" style="flex-shrink: 0;">
+                wont shrink at all
+            </div>
+            <div class="flexbox-item flexbox-item-2" style="width: 10px;">
+            </div>
+            <div class="flexbox-item flexbox-item-3" style="flex-grow:1;">
+                take the remaining space of flex box, flex-grow on other eleemnt will take twice the size than other of remaining space 
+            </div>
+        </div>
+        <div class="space">
+            .flexbox-container{
+                display: flex;
+    
+                /* flex property  */
+                justify-content: flex-start; /*default value*/
+                justify-content: center; 
+                justify-content: space-between; /*same space between*/
+                justify-content: space-around; /*space around*/
+            }
+        </div>
+        <br>
+        <br><br><br><br><hr>
+        flex-box 7 : order
+        <div class="flexbox-container-3">
+            <div class="flexbox-item flexbox-item-1" style="order:2">
+                one
+            </div>
+            <div class="flexbox-item flexbox-item-2" style="order:3">
+                two
+            </div>
+            <div class="flexbox-item flexbox-item-3" style="order:1">
+                three
+            </div>
+        </div>
+        <div class="space">
+            .flexbox-container-3{
+                display: flex;
+                border: 2px solid black;
+                height: 100px;
+                justify-content: center;
+                flex-wrap: wrap;  /*content will wrap around when display is smaller*/
+                align-content: flex-start; /*align at top of container*/
+                align-content: flex-end; /*bottom*/
+                align-content: space-between;
+            }
+        </div>
+        <br>
+        <br><br><br><br><hr>
+    </body>
+</html>

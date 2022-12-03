@@ -1,0 +1,80 @@
+0. starting a project : 
+    npx create-react-app my-app
+    cd my-app
+    npm start
+
+1. creating element and inserting in HTML using vanilla javascript 
+
+    const h1 = document.createElement("h1")
+    h1.textContent = "This is an imperative way to program"
+    h1.className = "header"
+    document.getElementById("root").append(h1)
+
+2. ReactDOM.render is no longer supported in React 18. Use createRoot instead. 
+    import React from "react"
+    import ReactDOM from "react-dom/client"
+
+    const navbar = (
+        <nav>
+            <h1>Bob's Bistro</h1>
+            <ul>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    )
+
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(navbar)
+
+    // ReactDOM.render(navbar, document.getElementById("root"))
+    // ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+
+3. JSX is an extension used to combine the UI and logical code of the website. i.e html and javascript. We can call these combinations 
+components. 
+JSX returns plain javascript objects, browser cannot interpret, but when rendered with react, it converts them into real DOM elements, 
+then the browser interpret them 
+
+    const obj = (
+        <h1> hello </h1>
+    )
+    document.getElementById("root").append(obj)genshin impact
+
+    will give [object, object] on page
+
+4. import react because JSX is defined in it 
+
+5. Imperative : tell what programm needs to do : 
+    const h1 = document.createElement("h1")
+    h1.textContent = "This is an imperative way to program"
+    h1.className = "header"
+    document.getElementById("root").append(h1)
+
+    Declaritive : 
+    ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
+
+6. React is composable: break down large code in small components, lot more managebale
+
+7. A react component is a fucntion, that returns react element 
+
+8. Quick template setup for react using vite : 
+    npm create vite@latest 
+    cd projectname
+    npm run dev
+
+
+
+const person = {
+    img: "./images/mr-whiskerson.png",
+    name: "Mr. Whiskerson",
+    phone: "(800) 555-1234",
+    email: "mr.whiskaz@catnap.meow"
+}
+
+const {img, name} = person
+console.log(name)
+    
+
+the JSX we use to describe native DOM elements will
+be turned into REAL DOM elements by React.
