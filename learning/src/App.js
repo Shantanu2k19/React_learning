@@ -1,6 +1,8 @@
 import './App.css';
 import Child from "./child"
 import React from "react"
+import Boxtest from "./box"
+import boxdata from "./box_data.js"
 
 function App() {
   const [starProp, setStarProp] = React.useState({
@@ -16,17 +18,29 @@ function App() {
           show_color: !prevContact.show_color
       }
     })
-
   }
+
+  const boxSection = boxdata.map(
+    individual =>(
+      <Boxtest key={individual.id} on={individual.on}/>
+    )
+  )
 
   return (
     // <div onClick={changeColor}>
     <div>
       Hello react! <br/>
+
+      <hr/>
+
       <Child 
         starProperty = {starProp} 
         handleClick = {changeColor}
       />
+
+      <hr/>
+
+      {boxSection}
       {/* send a prop to child component defining property  */}
       {/* also send the event listner function to child to control the state of element from child  */}
     </div>
