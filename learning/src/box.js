@@ -13,12 +13,12 @@ export default function Boxtest(prop) {
     }
   
     // styles can also be done inline
-    const JSXstyles = 
-        {border: "2px solid black", 
-            height: "20px", 
-            width:"200px", 
-            margin: "5px",
-            backgroundColor: backCol,
+    const JSXstyles = {
+        border: "2px solid black", 
+        height: "20px", 
+        width:"200px", 
+        margin: "5px",
+        backgroundColor: backCol,
         };
       
     return (
