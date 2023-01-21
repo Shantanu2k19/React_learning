@@ -1,0 +1,97 @@
+.main_div
+{
+    margin-top: 230px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width:100%;
+    position: relative;
+}
+
+.one
+{
+    margin-top: 200px;   
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+.two
+{
+    margin-top: 400px;
+    background-color:orange;
+    float: center;
+    width: 33%;  
+}
+.three
+{
+    margin-top: 400px;
+    background-color: hotpink;
+    float: right;
+    width: 33%;  
+}
+
+.cardImage{
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.smallTextDiv{
+    width: 100%;
+    text-align: left;
+    /* margin-left: 1vh; */
+    margin-left:20px;
+}
+
+.star{
+    height: 14px;
+}
+
+.smallText{
+    color:black;
+    font-family: 'Inter', monospace;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0px 0px 0px 5px;
+}
+
+.smallText2{
+    color:black;
+    font-family: 'Inter', monospace;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10%;
+    margin-bottom: 15px;
+}
+
+.smallText3{
+    color:black;
+    font-family: 'Inter', monospace;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 30%;
+}
+
+
+/* horizontal, scroll enables  */
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.soldout{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: black;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
