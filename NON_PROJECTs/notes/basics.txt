@@ -76,5 +76,20 @@ const {img, name} = person
 console.log(name)
     
 
-the JSX we use to describe native DOM elements will
+the JSX we use to describe native DOM elements will 
 be turned into REAL DOM elements by React.
+
+
+
+
+
+
+API 
+
+react can remember react state from one render to another 
+
+side effect : outside effect : local storage, 
+
+
+
+
