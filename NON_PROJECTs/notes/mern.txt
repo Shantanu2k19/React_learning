@@ -1,0 +1,40 @@
+Express: framework for nodejs
+
+MongoDB sotres data in BSON format.
+    Binary json
+
+MongoDB atlas : 
+username : zodiac, pass : mongozod
+
+mongodb+srv://zodiac:<password>@cluster0.jz2gbrc.mongodb.net/?retryWrites=true&w=majority
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://zodiac:<password>@cluster0.jz2gbrc.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+
+mongodb : objectID 
+unixTimestamp(4Bytes)+randomValue(5Bytes)+count(3Bytes)
+
+
+steps : 
+1. after creating react app, create new folder 'backend'
+2. cd to that folder 
+3. npm init -y 
+4. npm install express cors mongoose dotenv
+
+cors : cross origin resources sharing - provides an express middleware
+we can access something outside of oyur server 
+
+mongoos : make interacting with mongoDb through nodejs simpler
+dotenv : loads env variable from file .env file to process.env, making development simpler 
+
+5. npm install -g nodemon
+automatically reloads when file change detected 
+
+//npm install react-router-dom
