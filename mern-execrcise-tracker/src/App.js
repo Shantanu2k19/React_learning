@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <div className="container">
         <Navbar />
-        <hr/>
+        *******************************************
         <Routes>
         
           <Route path="/" exact element={<ExercisesList />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/user" element={<CreateUser />} />
         
         </Routes>
-        <hr/>
+        *******************************************
       </div>
     </BrowserRouter>
     </div>

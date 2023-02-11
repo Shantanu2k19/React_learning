@@ -9,13 +9,17 @@ const Exercise = props => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0,10)}</td>
     <td>
-      <Link to={"/edit/"+props.exercise._id}>edit</Link> | <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
+      <Link to={"/edit/"+props.exercise._id}>editLink</Link> # <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>deleteLink</a>
     </td>
   </tr>
 )
 
 export default class ExercisesList extends Component {
+ 
   constructor(props) {
+    console.log("constructor called for exercise list !");
+    console.log(props)  //initially empty 
+
     //always call super when defining constructor of subclass
     super(props);
 
@@ -25,6 +29,8 @@ export default class ExercisesList extends Component {
   }   
 
   componentDidMount() {
+    console.log("Component mount ?? fn");
+
     axios.get('http://localhost:5000/exercises/')
       .then(response => {
         this.setState({ exercises: response.data })
@@ -35,6 +41,7 @@ export default class ExercisesList extends Component {
   }
 
   deleteExercise(id) {
+    console.log("delete fn called ");
     axios.delete('http://localhost:5000/exercises/'+id)
       .then(response => { console.log(response.data)});
 
@@ -44,12 +51,15 @@ export default class ExercisesList extends Component {
   }
 
   exerciseList() {
+    console.log("list fn called ");
     return this.state.exercises.map(currentexercise => {
       return <Exercise exercise={currentexercise} deleteExercise={this.deleteExercise} key={currentexercise._id}/>;
     })
   }
 
   render() {
+    console.log("Exercise list page loaded");
+  
     return (
       <div>
         <h3>Logged Exercises</h3>
