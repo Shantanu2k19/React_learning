@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+
+/* for all page  */
+.container{
+  background-color: aquamarine;
+}
+
+/* for navbar */
+.custom_class{
+  padding: 10px;
+  background-color: rgb(50, 37, 100) !important;
+}
