@@ -5,6 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 export default class EditExercise extends Component {
   constructor(props) {
+    console.log("edit-exercise constructor");
     super(props);
 
     this.onChangeUsername = this.onChangeUsername.bind(this);
@@ -23,6 +24,8 @@ export default class EditExercise extends Component {
   }
 
   componentDidMount() {
+    console.log("edit-exercise DidMount?")
+    console.log(this.props.match.params.id);
     axios.get('http://localhost:5000/exercises/'+this.props.match.params.id)
       .then(response => {
         this.setState({
