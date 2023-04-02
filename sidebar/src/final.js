@@ -59,11 +59,12 @@ export default function Lol(){
                 }
         >
             sidebar
-            <button onClick={toggleSidebar}>close</button>
         </div>
+        { sidebarOpen && screenWidth<=620 && (<button className="lol" onClick={toggleSidebar}>closse</button>)}
       </>
-
-      <div className="content" onClick={closeSidebarFromContent}>
+      
+      {(sidebarOpen && screenWidth<=620) && <div className="overlay" onClick={closeSidebarFromContent}></div>}
+      <div className="content">
         <MyComponent>
         <div className="header">
           header

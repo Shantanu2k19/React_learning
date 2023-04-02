@@ -8,18 +8,26 @@ html, body {
     min-height: 99vh;
 }
 
-.sidebar{
-    
+.sidebar{    
     min-height: 100%;
     border: 2px solid green;
     width: 200px;
-    left : -20px;
     background: white;
     transition: 0.3s;
+      z-index: 98;
+
 }
 
-.sidebar-hidden{
-    
+.lol{
+    height: 20px;
+    width: 50px;
+
+    position:absolute;
+    left : 203px;
+    top:10%;
+    transition: 0.3s;
+  z-index: 99;
+
 }
 
 .content{
@@ -41,4 +49,15 @@ html, body {
     background-color: rgba(94, 94, 116, 0.377);
     min-width: 100%;
     border: 2px solid yellow;
+}
+
+.overlay{
+    background-color: rgba(211, 25, 25, 0.308);
+    height: 100%;
+    width:100%;
+    position: absolute;
+  left: 0px;
+  top: 0px;
+    transition: 1.3s;
+    z-index: 90;
 }
