@@ -1,0 +1,37 @@
+html, body {
+    margin: 0px;
+}
+
+
+.home{
+    border: 2px solid black;
+    display: flex;
+    min-height: 99vh;
+}
+
+.sidebar{
+    min-height: 200px;
+    border: 2px solid green;
+    width: 200px
+}
+
+.content{
+    display: flex;
+    min-height: 100%;
+    border: 3px solid red;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header{
+    height: 20px;
+    border: 2px solid blue;
+    min-width: 100%;
+}
+
+.insideContent{
+    height: 100%;
+    background-color: rgba(94, 94, 116, 0.377);
+    min-width: 100%;
+    border: 2px solid yellow;
+}

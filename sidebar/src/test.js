@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import './lol.css'
 
 const MyComponent = styled.div`
-  display: inline;
+  display: none;
   
   @media (max-width: 768px) {
-    display: none;
+    display: inline;
   }
 `;
 
 const App = () => {
   return (
-    <div>
+    <div className="home">
+
       <MyComponent>
-        This will be blue on desktop and red on mobile
+        <div className="header">
+
+        </div>
       </MyComponent>
     </div>
   );
