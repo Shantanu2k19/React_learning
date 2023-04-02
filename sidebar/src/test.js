@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import './lol.css'
+
 
 const MyComponent = styled.div`
   display: none;
@@ -15,8 +15,8 @@ const App = () => {
     <div className="home">
 
       <MyComponent>
-        <div className="header">
-
+        <div>
+        
         </div>
       </MyComponent>
     </div>
