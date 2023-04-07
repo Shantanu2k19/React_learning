@@ -14,7 +14,7 @@ export default function Modal(){
             <button onClick={showPopup}> hello </button>
    
             <div className="globalDiv" style={ enabled? {top:"50%"}: {top:"-100px"}}>
-                kya kiya yaar 
+                kya kiya yaar maaneeey brazzer
             </div>
 
        </>
