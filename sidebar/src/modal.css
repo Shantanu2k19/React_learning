@@ -1,0 +1,15 @@
+.globalDiv{
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translate(-50%, -50%);
+
+  height: 100px;
+  width: 300px;
+  border: 2px solid red;
+  background-color: yellow;
+
+  /* transition: all .5s ease-in-out; */
+  transition: 0.3s;
+
+}
