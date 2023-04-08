@@ -5,8 +5,8 @@
   top: -100px;
   transform: translate(-50%, -50%);
 
-  height: 140px;
-  width: 380px;
+  height: 170px;
+  width: 430px;
   background-color: white;
   box-shadow: 5px 4px 5px 1px rgb(82, 79, 79);
   border-radius: 10px;
@@ -43,27 +43,26 @@
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   flex-direction: row;
+  width: 100%;
   justify-content: center;
+  justify-content: space-between;
 
 }
 
 
 
 
-.button-17 {
-  margin-left: 30px;
-}
 
 /* CSS */
 .button-17 {
   align-items: center;
   appearance: none;
-  background-color: #fff;
+  background-color: #343541;
   border-radius: 14px;
   border-style: none;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
   box-sizing: border-box;
-  color: #3c4043;
+  color: #f9fafb;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;

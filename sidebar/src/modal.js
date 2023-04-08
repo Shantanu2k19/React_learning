@@ -32,7 +32,7 @@ export default function Modal() {
         <>
             <button className="button" onClick={showPopup}> Click Me </button>
 
-            <div className="globalDiv" style={enabled ? { top: "10%" } : { top: "-100px" }}>
+            <div className="globalDiv" style={enabled ? { top: "13%" } : { top: "-100px" }}>
                 <div className="insidecontent">
                     <form onSubmit={handleSubmit}>
                         <label className="label"> Write a brief description about the bug
