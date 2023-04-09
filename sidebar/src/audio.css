@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: sans-serif;
+    }
+    .Speech {
+    width: 50px;
+    }
+    .group {
+    margin: 7px 0;
+    }
+    textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid rgb(228, 20, 20);
+    outline: none;
+    border-radius: 3px;
+    }
+    button {
+    width: 100%;
+    display: block;
+    padding: 10px 22px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    background: rgb(227, 240, 219);;
+    }
+    h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    
